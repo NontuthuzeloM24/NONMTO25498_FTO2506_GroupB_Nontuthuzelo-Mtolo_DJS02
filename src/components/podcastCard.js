@@ -81,7 +81,7 @@ class PodcastCard extends HTMLElement {
     const genres = this.getAttribute('genres')
       ? JSON.parse(this.getAttribute('genres'))
       : [];
-    const seasons = this.getAttribute('seasons') || 0;
+    const seasons = this.getAttribute('seasons') || '';
     const updated = this.getAttribute('updated') || '';
 
     this.wrapper.innerHTML = `

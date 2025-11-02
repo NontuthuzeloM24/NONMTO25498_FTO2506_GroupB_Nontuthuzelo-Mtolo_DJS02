@@ -16,6 +16,44 @@ body {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== Filters Section ===== */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem; /* space between items */
+  padding: 1rem 2rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e0e0e0;
+  font-family: 'Inter', sans-serif;
+}
+
+.filters h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.filters select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  background-color: white;
+  color: #333;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.filters select:focus {
+  border-color: #6a5acd;
+  box-shadow: 0 0 0 2px rgba(106, 90, 205, 0.15);
+  outline: none;
+}
+
 .filters select {
   margin-left: 1rem;
   padding: 0.5rem;
@@ -193,5 +231,9 @@ body {
   }
   .season-title {
     font-size: 0.8rem;
+  }
+  .filters {
+    display: flex;
+    justify-content: space-around;
   }
 }
